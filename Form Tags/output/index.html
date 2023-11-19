@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The output element</h1>
+
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+      <input type="range" id="a" value="50" />
+      +<input type="number" id="b" value="25" /> =<output
+        name="x"
+        for="a b"
+      ></output>
+    </form>
+
+    <p>
+      <strong>Note:</strong> The output element is not supported in Edge 12 (or
+      earlier).
+    </p>
+
+    <h2>Definition and Usage</h2>
+
+    <p>
+      The &lt;output&gt; tag is used to represent the result of a calculation
+      (like one performed by a script).
+    </p>
+
+    <h2>Attributes</h2>
+    <table class="ws-table-all notranslate">
+      <tbody>
+        <tr>
+          <th style="width: 15%">Attribute</th>
+          <th style="width: 15%">Value</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td><a href="att_output_for.asp">for</a></td>
+          <td><i>element_id</i></td>
+          <td>
+            Specifies the relationship between the result of the calculation,
+            and the elements used in the calculation
+          </td>
+        </tr>
+        <tr>
+          <td><a href="att_output_form.asp">form</a></td>
+          <td><i>form_id</i></td>
+          <td>Specifies which form the output element belongs to</td>
+        </tr>
+        <tr>
+          <td><a href="att_output_name.asp">name</a></td>
+          <td><i>name</i></td>
+          <td>Specifies a name for the output element</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Global Attributes</h2>
+    <p>The &lt;output&gt; tag also supports the Global Attributes in HTML.</p>
+
+    <h2>Event Attributes</h2>
+    <p>The &lt;output&gt; tag also supports the Event Attributes in HTML.</p>
+  </body>
+</html>
