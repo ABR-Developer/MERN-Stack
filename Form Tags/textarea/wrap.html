@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The textarea wrap attribute</h1>
+
+    <form action="/action_page.php">
+      <textarea rows="2" cols="20" name="usrtxt" wrap="hard">
+                At W3Schools you will find free Web-building tutorials.
+            </textarea
+      >
+      <input type="submit" />
+    </form>
+
+    <h2>Definition and Usage</h2>
+    <p>
+      The wrap attribute specifies how the text in a text area is to be wrapped
+      when submitted in a form.
+    </p>
+
+    <h2>Syntax: &lt;textarea wrap="soft|hard"&gt;</h2>
+
+    <h2>Values</h2>
+    <table class="ws-table-all notranslate">
+      <tbody>
+        <tr>
+          <th style="width: 20%">Value</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>soft</td>
+          <td>
+            The text in the textarea is not wrapped when submitted in a form.
+            This is default
+          </td>
+        </tr>
+        <tr>
+          <td>hard</td>
+          <td>
+            The text in the textarea is wrapped (contains newlines) when
+            submitted in a form. When "hard" is used, the cols attribute must be
+            specified
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

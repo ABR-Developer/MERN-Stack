@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The textarea form attribute</h1>
+
+    <form action="/action_page.php" id="usrform">
+      Name: <input type="text" name="usrname" />
+      <input type="submit" />
+    </form>
+    <br />
+    <textarea rows="4" cols="50" name="comment" form="usrform">
+        Enter text here...
+    </textarea>
+
+    <p>
+      The text area above is outside the form element, but should still be a
+      part of the form.
+    </p>
+
+    <h2>Definition and Usage</h2>
+    <p>
+      The form attribute specifies the form the text area belongs to. The value
+      of this attribute must be equal to the id attribute of a &lt;form&gt;
+      element in the same document.
+    </p>
+
+    <h2>Syntax: &lt;textarea form="form_id"&gt;</h2>
+  </body>
+</html>

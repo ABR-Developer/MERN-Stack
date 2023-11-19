@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The textarea dirname attribute</h1>
+
+    <form action="/action_page.php">
+      Text:<br />
+      <textarea name="explanation" dirname="explanation.dir"></textarea>
+      <input type="submit" value="Submit" />
+    </form>
+
+    <p>
+      When the form is being submitted, the text direction of the textarea will
+      also be submitted.
+    </p>
+
+    <h2>Definition and Usage</h2>
+    <p>
+      The dirname attribute enables the submission of the text direction of the
+      text area. The dirname attribute's value is always the name of the text
+      area, followed by ".dir".
+    </p>
+    <h2>
+      Syntax: &lt;textarea name="myname"
+      dirname="myname.dir"&gt;&lt;/textarea&gt;
+    </h2>
+  </body>
+</html>
