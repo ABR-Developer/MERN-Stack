@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The label form attribute</h1>
+
+    <p>
+      The label for the first radio button is outside the form, but still a part
+      of the form. Try to click the "HTML" text label to select the "HTML" radio
+      button.
+    </p>
+
+    <form action="/action_page.php" id="form1">
+        <input type="radio" id="html" name="fav_language" value="HTML" /><br />
+        <input type="radio" id="css" name="fav_language" value="CSS" />  
+      <label for="css">CSS</label><br />
+       
+      <input
+        type="radio"
+        id="javascript"
+        name="fav_language"
+        value="JavaScript"
+      />
+        <label for="javascript">JavaScript</label><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <label form="form1" for="html">HTML</label>
+
+    <h2>Definition and Usage</h2>
+    <p>
+      The form attribute specifies the form the label belongs to. The value of
+      this attribute must be equal to the id attribute of a &lt;form&gt; element
+      in the same document.
+    </p>
+
+    <h2>Syntax: &lt;label form="form_id"&gt;</h2>
+  </body>
+</html>
