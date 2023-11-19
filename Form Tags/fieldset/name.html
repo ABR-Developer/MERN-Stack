@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The fieldset name attribute</h1>
+
+    <form action="/action_page.php" method="get">
+      <fieldset name="personalia">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" />
+      </fieldset>
+      <br />
+      <button
+        type="button"
+        onclick="form.personalia.style.backgroundColor='yellow'"
+      >
+        Change background color of fieldset
+      </button>
+      <input type="submit" />
+    </form>
+
+    <h2>Definition and Usage</h2>
+    <p>
+      The name attribute specifies a name for a fieldset. The name attribute is
+      used to reference elements in a JavaScript, or to reference form data
+      after a form is submitted.
+    </p>
+
+    <h2>Syntax: &lt;fieldset name="text"&gt;</h2>
+  </body>
+</html>

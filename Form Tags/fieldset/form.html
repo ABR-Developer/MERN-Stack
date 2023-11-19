@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The fieldset form attribute</h1>
+
+    <form action="/action_page.php" method="get" id="form1">
+      <label for="favcolor">What is your favorite color?</label>
+      <input type="text" id="favcolor" name="favcolor" />
+      <input type="submit" />
+    </form>
+
+    <p>The fieldset below is outside the form, but still a part of the form.</p>
+
+    <fieldset form="form1">
+      <legend>Personalia:</legend>
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" form="form1" /><br /><br />
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname" form="form1" />
+    </fieldset>
+
+    <h2>Definition and Usage</h2>
+    <p>
+      The form attribute specifies the form the fieldset belongs to. The value
+      of this attribute must be equal to the id attribute of a &lt;form&gt;
+      element in the same document.
+    </p>
+
+    <h2>Syntax: &lt;fieldset form="form_id"&gt;</h2>
+  </body>
+</html>
