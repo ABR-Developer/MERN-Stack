@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The select form attribute</h1>
+
+    <p>
+      The form attribute specifies which form the drop-down list belongs to:
+    </p>
+
+    <form action="/action_page.php" id="carform">
+      <label for="fname">Firstname:</label>
+      <input type="text" id="fname" name="fname" />
+      <input type="submit" />
+    </form>
+    <br />
+
+    <label for="cars">Choose a car:</label>
+    <select id="cars" name="carlist" form="carform">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="opel">Opel</option>
+      <option value="audi">Audi</option>
+    </select>
+
+    <p>
+      The drop-down list is defined outside the form element, but will be
+      submitted with the form.
+    </p>
+
+    <h2>Definition and Usage</h2>
+    <p>
+      The form attribute specifies the form the drop-down list belongs to. The
+      value of this attribute must be equal to the id attribute of a
+      &lt;form&gt; element in the same document.
+    </p>
+
+    <h2>Syntax: &lt;select form="form_id"&gt;</h2>
+  </body>
+</html>

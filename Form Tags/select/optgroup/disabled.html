@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The optgroup disabled attribute</h1>
+
+    <form action="/action_page.php">
+      <label for="cars">Choose a car:</label>
+      <select name="cars" id="cars">
+        <optgroup label="Swedish Cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+        </optgroup>
+        <optgroup label="German Cars" disabled>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </optgroup>
+      </select>
+      <br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <h2>Definition and Usage</h2>
+    <p>
+      The disabled attribute is a boolean attribute. When present, it specifies
+      that an option-group should be disabled. A disabled option-group is
+      unusable and un-clickable. The disabled attribute can be set to keep a
+      user from selecting the option-group until some other condition has been
+      met (like selecting a checkbox, etc.). Then, a JavaScript is required to
+      remove the disabled value, and make the option-group selectable.
+    </p>
+
+    <h2>Syntax: &lt;optgroup disabled&gt;</h2>
+  </body>
+</html>

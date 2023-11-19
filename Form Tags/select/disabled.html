@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The select disabled attribute</h1>
+
+    <p>
+      The disabled attribute specifies that the drop-down list should be
+      disable:
+    </p>
+
+    <form action="/action_page.php">
+      <label for="cars">Choose a car:</label>
+      <select name="cars" id="cars" disabled>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
+      <br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <h2>Definition and Usage</h2>
+    <p>
+      The disabled attribute is a boolean attribute. When present, it specifies
+      that the drop-down list should be disabled. A disabled drop-down list is
+      unusable and un-clickable. The disabled attribute can be set to keep a
+      user from using the drop-down list until some other condition has been met
+      (like selecting a checkbox, etc.). Then, a JavaScript can remove the
+      disabled value, and make the drop-down list usable.
+    </p>
+
+    <h2>Syntax: &lt;select disabled&gt;</h2>
+  </body>
+</html>

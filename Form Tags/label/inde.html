@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The label element</h1>
+
+    <p>Click on one of the text labels to toggle the related radio button:</p>
+
+    <form action="/action_page.php">
+      <input type="radio" id="html" name="fav_language" value="HTML" />
+        <label for="html">HTML</label><br />
+        <input type="radio" id="css" name="fav_language" value="CSS" />  
+      <label for="css">CSS</label><br />
+       
+      <input
+        type="radio"
+        id="javascript"
+        name="fav_language"
+        value="JavaScript"
+      />
+        <label for="javascript">JavaScript</label><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <h2>Definition and Usage</h2>
+    <p>The &lt;label&gt; tag defines a label for several elements:</p>
+    <ul>
+      <li>&lt;input type="checkbox"&gt;</li>
+      <li>&lt;input type="color"&gt;</li>
+      <li>&lt;input type="date"&gt;</li>
+      <li>&lt;input type="datetime-local"&gt;</li>
+      <li>&lt;input type="email"&gt;</li>
+      <li>&lt;input type="file"&gt;</li>
+      <li>&lt;input type="month"&gt;</li>
+      <li>&lt;input type="number"&gt;</li>
+      <li>&lt;input type="password"&gt;</li>
+      <li>&lt;input type="radio"&gt;</li>
+      <li>&lt;input type="range"&gt;</li>
+      <li>&lt;input type="search"&gt;</li>
+      <li>&lt;input type="tel"&gt;</li>
+      <li>&lt;input type="text"&gt;</li>
+      <li>&lt;input type="time"&gt;</li>
+      <li>&lt;input type="url"&gt;</li>
+      <li>&lt;input type="week"&gt;</li>
+      <li>&lt;meter&gt;</li>
+      <li>&lt;progress&gt;</li>
+      &lt;select&gt;
+      <li>&lt;textarea&gt;</li>
+    </ul>
+    <p>
+      Proper use of labels with the elements above will benefit: Screen reader
+      users (will read out loud the label, when the user is focused on the
+      element) Users who have difficulty clicking on very small regions (such as
+      checkboxes) - because when a user clicks the text within the &lt;label&gt;
+      element, it toggles the input (this increases the hit area).
+    </p>
+
+    <h2>Tips and Notes</h2>
+    <p>
+      Tip: The for attribute of &lt;label&gt; must be equal to the id attribute
+      of the related element to bind them together. A label can also be bound to
+      an element by placing the element inside the &lt;label&gt; element.
+    </p>
+
+    <h2>
+        Attributes
+    </h2>
+  </body>
+</html>

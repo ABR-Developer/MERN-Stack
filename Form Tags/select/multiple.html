@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The select multiple attribute</h1>
+
+    <p>
+      The multiple attribute specifies that multiple options can be selected at
+      once:
+    </p>
+
+    <form action="/action_page.php">
+      <label for="cars">Choose a car:</label>
+      <select name="cars" id="cars" multiple>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="opel">Opel</option>
+        <option value="audi">Audi</option>
+      </select>
+      <br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <p>
+      Hold down the Ctrl (windows) or Command (Mac) button to select multiple
+      options.
+    </p>
+
+    <h2>Definition and Usage</h2>
+    <p>
+      The multiple attribute is a boolean attribute. When present, it specifies
+      that multiple options can be selected at once. Selecting multiple options
+      vary in different operating systems and browsers: For windows: Hold down
+      the control (ctrl) button to select multiple options For Mac: Hold down
+      the command button to select multiple options Because of the different
+      ways of doing this, and because you have to inform the user that multiple
+      selection is available, it is more user-friendly to use checkboxes
+      instead.
+    </p>
+
+    <h2>Syntax: &lt;select multiple&gt;</h2>
+  </body>
+</html>
