@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The button formenctype attribute</h1>
+
+    <form action="/action_page_binary.asp" method="post">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" value="Ståle" /><br /><br />
+      <button type="submit">Submit with character encoding</button>
+      <button type="submit" formenctype="text/plain">
+        Submit without character encoding
+      </button>
+    </form>
+
+    <h2>Definition and Usage</h2>
+    <p>
+      The formenctype attribute specifies how form-data should be encoded before
+      sending it to a server. This attribute overrides the form's enctype
+      attribute. The formenctype attribute is only used for buttons with
+      type="submit".
+    </p>
+
+    <h2>Syntax: &lt;button type="submit" formenctype="value"&gt;</h2>
+
+    <h2>Values</h2>
+    <table class="ws-table-all notranslate">
+      <tbody>
+        <tr>
+          <th style="width: 38%">Value</th>
+          <th style="width: 62%">Description</th>
+        </tr>
+        <tr>
+          <td>application/x-www-form-urlencoded</td>
+          <td>Default. All characters will be encoded before sent</td>
+        </tr>
+        <tr>
+          <td>multipart/form-data</td>
+          <td>
+            &nbsp;This value is necessary if the user will upload a file through
+            the form
+          </td>
+        </tr>
+        <tr>
+          <td>text/plain</td>
+          <td>Sends data without any encoding at all. Not recommended</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

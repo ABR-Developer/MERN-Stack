@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The button formnovalidate attribute</h1>
+
+    <form action="/action_page.php" method="get">
+      <label for="email">Enter your email:</label>
+      <input type="email" id="email" name="email" /><br /><br />
+      <button type="submit">Submit</button>
+      <button type="submit" formnovalidate>Submit without validation</button>
+    </form>
+
+    <p>
+      <strong>Note:</strong> The formnovalidate attribute of the button tag is
+      not supported in Safari.
+    </p>
+
+    <h2>Definition and Usage</h2>
+    <p>
+      The formnovalidate attribute is a boolean attribute. When present, it
+      specifies that the form-data should not be validated on submission. This
+      attribute overrides the form's novalidate attribute. The formnovalidate
+      attribute is only used for buttons with type="submit".
+    </p>
+
+    <h2>Syntax: &lt;button type="submit" formnovalidate&gt;</h2>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The button popovertargetaction Attribute</h1>
+
+    <h1 popover id="myheader">Hello</h1>
+
+    <button popovertarget="myheader" popovertargetaction="show">
+      Show popover
+    </button>
+
+    <p>Click the button and it will show the popover element.</p>
+
+    <h2>Definition and Usage</h2>
+    <p>
+      The popovertargetaction attribute allows you to define what happens when
+      you click the button. You can choose between the values "show", "hide",
+      and "toggle". If the popovertargetaction attribute is not specified, the
+      default "toggle" value will be used.
+    </p>
+
+    <h2>
+      Syntax: &lt;button popovertarget="element_id
+      popovertargetaction="hide|show|toggle""&gt;
+    </h2>
+
+    <h2>Values</h2>
+    <table class="ws-table-all notranslate">
+      <tbody>
+        <tr>
+          <th style="width: 20%">Value</th>
+          <th>Description</th>
+          <th></th>
+        </tr>
+        <tr>
+          <td>hide</td>
+          <td>The popover element is hidden when you click the button</td>
+          <td>
+            <a
+              target="_blank"
+              class="w3-btn btnsmall btnsmall"
+              href="tryit.asp?filename=tryhtml_att_button_popovertargetaction_show_hide_toggle"
+              >Try it »</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>show</td>
+          <td>The popover element is showed when you click the button</td>
+          <td>
+            <a
+              target="_blank"
+              class="w3-btn btnsmall btnsmall"
+              href="tryit.asp?filename=tryhtml_att_button_popovertargetaction_show_hide_toggle"
+              >Try it »</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>toggle</td>
+          <td>
+            Default value. The popover element is toggled between hidding and
+            showing when you click the button
+          </td>
+          <td>
+            <a
+              target="_blank"
+              class="w3-btn btnsmall btnsmall"
+              href="tryit.asp?filename=tryhtml_att_button_popovertargetaction_show_hide_toggle"
+              >Try it »</a
+            >
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

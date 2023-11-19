@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The button formmethod attribute</h1>
+
+    <form action="/action_page.php" method="get" target="_blank">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname" /><br /><br />
+      <button type="submit">Submit</button>
+      <button type="submit" formmethod="post">Submit using POST</button>
+    </form>
+
+    <h2>Definition and Usage</h2>
+    <p>
+      The formmethod attribute specifies which HTTP method to use when sending
+      the form-data. This attribute overrides the form's method attribute. The
+      formmethod attribute is only used for buttons with type="submit". The
+      form-data can be sent as URL variables (with method="get") or as HTTP post
+      (with method="post").
+    </p>
+    <p>
+      Notes on the "get" method: it appends the form-data to the URL in
+      name/value pairs it is useful for form submissions where a user want to
+      bookmark the result There is a limit to how much data you can place in a
+      URL (varies between browsers), therefore, you cannot be sure that all of
+      the form-data will be correctly transferred Never use the "get" method to
+      pass sensitive information! (password or other sensitive information will
+      be visible in the browser's address bar)
+    </p>
+    <p>
+      Notes on the "post" method: it sends the form-data as an HTTP post
+      transaction Form submissions with the "post" method cannot be bookmarked
+      it is more robust and secure than "get" it does not have size limitations
+    </p>
+
+    <h2>Syntax: &lt;button type="submit" formmethod="get|post"&gt;</h2>
+
+    <h2>Values</h2>
+    <table class="ws-table-all notranslate">
+      <tbody>
+        <tr>
+          <th style="width: 20%">Value</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>get</td>
+          <td>
+            Appends the form-data to the URL: URL?name=value&amp;name=value
+          </td>
+        </tr>
+        <tr>
+          <td>post</td>
+          <td>Sends the form-data as an HTTP post transaction</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

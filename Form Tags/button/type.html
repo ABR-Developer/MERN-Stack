@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The button type attribute</h1>
+
+    <form action="/action_page.php" method="get">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname" /><br /><br />
+      <button type="submit" value="Submit">Submit</button>
+      <button type="reset" value="Reset">Reset</button>
+    </form>
+
+    <h2>Definition and Usage</h2>
+    <p>
+      The type attribute specifies the type of button. Tip: Always specify the
+      type attribute for the &lt;button&gt; element. Different browsers may use
+      different default types for the &lt;button&gt; element.
+    </p>
+
+    <h2>Syntax: &lt;button type="button|submit|reset"&gt;</h2>
+
+    <h2>Values</h2>
+    <table class="ws-table-all notranslate">
+      <tbody>
+        <tr>
+          <th style="width: 20%">Value</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>button</td>
+          <td>The button is a clickable button</td>
+        </tr>
+        <tr>
+          <td>submit</td>
+          <td>The button is a submit button (submits form-data)</td>
+        </tr>
+        <tr>
+          <td>reset</td>
+          <td>
+            The button is a reset button (resets the form-data to its initial
+            values)
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
