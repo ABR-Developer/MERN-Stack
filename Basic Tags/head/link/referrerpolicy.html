@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <link href="https://w3schools.com/" referrerpolicy="no-referrer" />
+  <body>
+    <h2>Definition and Usage</h2>
+    <pre>
+        The referrerpolicy attribute specifies which referrer information to send when fetching an CSS through &lt;link&gt; tag.
+    </pre>
+
+    <h2>
+      Syntax: &lt;link
+      referrerpolicy="no-referrer|no-referrer-when-downgrade|origin|origin-when-cross-origin|same-origin|strict-origin-when-cross-origin|unsafe-url"&gt;
+    </h2>
+
+    <h2>Values</h2>
+    <table class="ws-table-all notranslate">
+      <tbody>
+        <tr>
+          <th style="width: 30%">Value</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>no-referrer</td>
+          <td>No referrer information will be sent along with a request</td>
+        </tr>
+        <tr>
+          <td>no-referrer-when-downgrade</td>
+          <td>
+            Default. The referrer header will not be sent to origins without
+            HTTPS
+          </td>
+        </tr>
+        <tr>
+          <td>origin</td>
+          <td>Send only scheme, host, and port to the request client</td>
+        </tr>
+        <tr>
+          <td>origin-when-cross-origin</td>
+          <td>
+            For cross-origin requests: Send only scheme, host, and port. For
+            same-origin requests: Also include the path
+          </td>
+        </tr>
+        <tr>
+          <td>same-origin</td>
+          <td>
+            For same-origin requests: Referrer info will be sent. For
+            cross-origin requests: No referrer info will be sent
+          </td>
+        </tr>
+        <tr>
+          <td>strict-origin</td>
+          <td>
+            Only send referrer info if the security level is the same (e.g.
+            HTTPS to HTTPS). Do not send to a less secure destination (e.g.
+            HTTPS to HTTP)
+          </td>
+        </tr>
+        <tr>
+          <td>strict-origin-when-cross-origin</td>
+          <td>
+            Send full path when performing a same-origin request. Send only
+            origin when the security level stays the same (e.g. HTTPS to HTTPS).
+            Send no header to a less secure destination (HTTPS to HTTP)
+          </td>
+        </tr>
+        <tr>
+          <td>unsafe-url</td>
+          <td>
+            Send origin, path and query string (but not fragment, password, or
+            username). This value is considered unsafe
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

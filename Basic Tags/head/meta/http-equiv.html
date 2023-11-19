@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="30" />
+  </head>
+  <body>
+    <h1>My Website</h1>
+    <p>Some text...</p>
+
+    <h2>Definition and Usage</h2>
+    <pre>
+        The http-equiv attribute provides an HTTP header for the information/value of the content attribute.
+        The http-equiv attribute can be used to simulate an HTTP response header.
+    </pre>
+
+    <h2>
+      Syntax: &lt;meta
+      http-equiv="content-security-policy|content-type|default-style|refresh"&gt;
+    </h2>
+
+    <h2>Values</h2>
+    <table class="ws-table-all notranslate" id="table1">
+      <tbody>
+        <tr>
+          <th style="width: 20%">Value</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>content-security-policy</td>
+          <td>
+            Specifies a content policy for the document.
+            <p>Example:</p>
+            <p>
+              &lt;meta http-equiv="content-security-policy" content="default-src
+              'self'"&gt;
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>content-type</td>
+          <td>
+            Specifies the character encoding for the document.
+            <p>Example:</p>
+            <p>
+              &lt;meta http-equiv="content-type" content="text/html;
+              charset=UTF-8"&gt;
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>default-style</td>
+          <td>
+            Specified the preferred style sheet to use.
+            <p>Example:</p>
+            <p>
+              &lt;meta http-equiv="default-style" content="<em
+                >the document's preferred stylesheet</em
+              >"&gt;
+            </p>
+            <p>
+              <strong>Note:</strong> The value of the content attribute above
+              must match the value of the title attribute on a link element in
+              the same document, or it must match the value of the title
+              attribute on a style element in the same document.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>refresh</td>
+          <td>
+            Defines a time interval for the document to refresh itself.
+            <p>Example:</p>
+            <p>&lt;meta http-equiv="refresh" content="300"&gt;</p>
+            <p>
+              Note: The value "refresh" should be used carefully, as it takes
+              the control of a page away from the user. Using "refresh" will
+              cause a failure in
+              <a target="_blank" href="http://www.w3.org/WAI/intro/wcag.php"
+                >W3C's Web Content Accessibility Guidelines</a
+              >.
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

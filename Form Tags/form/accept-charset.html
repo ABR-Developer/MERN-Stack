@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The form accept-charset attribute</h1>
+
+    <form action="/action_page.php" accept-charset="utf-8">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <h2>Definition and Usage</h2>
+    <p>
+      The accept-charset attribute specifies the character encodings that are to
+      be used for the form submission.
+    </p>
+
+    <h2>Syntax: &lt;form accept-charset="character_set"&gt;</h2>
+
+    <h2>Values</h2>
+    <table class="ws-table-all notranslate">
+      <tbody>
+        <tr>
+          <th style="width: 20%">Value</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td><i>character_set</i></td>
+          <td>
+            A space-separated list of one or more character encodings that are
+            to be used for the form submission.
+            <p>Common values:</p>
+            <ul>
+              <li>UTF-8 - Character encoding for Unicode</li>
+              <li>ISO-8859-1 - Character encoding for the Latin alphabet</li>
+            </ul>
+            <p>
+              In theory, any character encoding can be used, but no browser
+              understands all of them. The more widely a character encoding is
+              used, the better the chance that a browser will understand it.
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

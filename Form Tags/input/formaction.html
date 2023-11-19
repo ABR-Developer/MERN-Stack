@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The formaction attribute</h1>
+
+    <form action="/action_page.php">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname" /><br /><br />
+      <input type="submit" value="Submit" />
+      <input
+        type="submit"
+        formaction="/action_page2.php"
+        value="Submit to another page"
+      />
+    </form>
+
+    <h2>Definition and Usage</h2>
+    <p>
+      The formaction attribute specifies the URL of the file that will process
+      the input control when the form is submitted. The formaction attribute
+      overrides the action attribute of the &lt;form&gt; element. Note: The
+      formaction attribute is used with type="submit" and type="image".
+    </p>
+  </body>
+</html>

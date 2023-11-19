@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The input disabled attribute</h1>
+
+    <form action="/action_page.php">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname" disabled /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <h2>Definition and Usage</h2>
+    <p>
+      The disabled attribute is a boolean attribute. When present, it specifies
+      that the &lt;input&gt; element should be disabled. A disabled input
+      element is unusable and un-clickable. The disabled attribute can be set to
+      keep a user from using the &lt;input&gt; element until some other
+      condition has been met (like selecting a checkbox, etc.). Then, a
+      JavaScript could remove the disabled value, and make the &lt;input&gt;
+      element usable. Tip: Disabled &lt;input&gt; elements in a form will not be
+      submitted!
+    </p>
+  </body>
+</html>

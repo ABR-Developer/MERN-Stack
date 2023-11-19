@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The formtarget attribute</h1>
+
+    <form action="/action_page.php">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname" /><br /><br />
+      <input type="submit" value="Submit as normal" />
+      <input
+        type="submit"
+        formtarget="_blank"
+        value="Submit to a new window/tab"
+      />
+    </form>
+
+    <h2>Definition and Usage</h2>
+    <p>
+      The formtarget attribute specifies a name or a keyword that indicates
+      where to display the response that is received after submitting the form.
+      The formtarget attribute overrides the target attribute of the
+      &lt;form&gt; element. Note: The formtarget attribute can be used with
+      type="submit" and type="image".
+    </p>
+
+    <h2>
+      Syntax: &lt;input formtarget="_blank|_self|_parent|_top|framename"&gt;
+    </h2>
+
+    <h2>Values</h2>
+    <table class="ws-table-all notranslate">
+      <tbody>
+        <tr>
+          <th style="width: 20%">Value</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>_blank</td>
+          <td>The response is displayed in a new window or tab</td>
+        </tr>
+        <tr>
+          <td>_self</td>
+          <td>The response is displayed in the same frame (this is default)</td>
+        </tr>
+        <tr>
+          <td>_parent</td>
+          <td>The response is displayed in the parent frame</td>
+        </tr>
+        <tr>
+          <td>_top</td>
+          <td>The response is displayed in the full body of the window</td>
+        </tr>
+        <tr>
+          <td><em>framename</em></td>
+          <td>The response is displayed in a named iframe</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

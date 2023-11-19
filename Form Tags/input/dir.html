@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The dirname attribute</h1>
+
+    <form action="/action_page.php">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" dirname="fname.dir" />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <p>
+      When the form is being submitted, the text direction of the input field
+      will also be submitted.
+    </p>
+
+    <h2>Definition and Usage</h2>
+    <p>
+      The dirname attribute enables the submission of the text direction of the
+      input field The dirname attribute's value is always the name of the input
+      field, followed by ".dir".
+    </p>
+  </body>
+</html>

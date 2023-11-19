@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The noscript element</h1>
+
+    <p>
+      A browser with JavaScript disabled will show the text inside the noscript
+      element ("Hello World!" will not be displayed).
+    </p>
+
+    <h2></h2>
+    <p>
+      Definition and Usage The &lt;noscript&gt; tag defines an alternate content
+      to be displayed to users that have disabled scripts in their browser or
+      have a browser that doesn't support script. The &lt;noscript&gt; element
+      can be used in both &lt;head&gt; and &lt;body&gt;. When used inside
+      &lt;head&gt;, the &lt;noscript&gt; element could only contain
+      &lt;link&gt;, &lt;style&gt;, and &lt;meta&gt; elements.
+    </p>
+
+    <script>
+      document.write("Hello World!");
+    </script>
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+  </body>
+</html>

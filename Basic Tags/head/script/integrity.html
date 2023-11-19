@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>integrity attribute script tag</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h2>Definition and Usage</h2>
+    <pre>
+        The integrity attribute allows a browser to check the fetched script to ensure
+        that the code is never loaded if the source has been manipulated.
+        Subresource Integrity (SRI) is a W3C specification that allows web developers 
+        to ensure that resources hosted on third-party servers have not been altered.
+        Use of SRI is recommended!
+        When using SRI, the webpage holds the hash and the server holds the file (the 
+        .js file in this case). The browser downloads the file, then checks it, to make
+        sure that it is a match with the hash in the integrity attribute. If it matches,
+        the file is used, and if not, the file is blocked.
+        You can use an online SRI hash generator to generate integrity hashes: SRI Hash Generator
+    </pre>
+  </body>
+</html>

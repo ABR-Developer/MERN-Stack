@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The form autocomplete attribute</h1>
+
+    <p>
+      Fill in and submit the form, then reload the page, start to fill in the
+      form again - and see how autocomplete works.
+    </p>
+    <p>Then, try to set autocomplete to "off".</p>
+
+    <form action="/action_page.php" method="get" autocomplete="on">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" /><br /><br />
+      <input type="submit" />
+    </form>
+
+    <p>
+      <b>Note:</b> The autocomplete attribute of the form element is not
+      supported in Opera 12 and earlier versions.
+    </p>
+
+    <h2>Definition and Usage</h2>
+    <p>
+      The autocomplete attribute specifies whether a form should have
+      autocomplete on or off. When autocomplete is on, the browser automatically
+      complete values based on values that the user has entered before. Tip: It
+      is possible to have autocomplete "on" for the form, and "off" for specific
+      input fields, or vice versa.
+    </p>
+
+    <h2>
+        Syntax: &lt;form autocomplete="on|off"&gt;
+    </h2>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <h2>I am formatted with a linked style sheet.</h2>
+    <p>Me too!</p>
+
+    <h2>Definition and Usage</h2>
+    <pre>
+        The required rel attribute specifies the relationship between
+        the current document and the linked document/resource.
+    </pre>
+
+    <h2>Syntax : &lt;link rel="value"&gt;</h2>
+
+    <h2>Values</h2>
+    <table class="ws-table-all notranslate" id="table1">
+      <tbody>
+        <tr>
+          <th style="width: 20%">Value</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>alternate</td>
+          <td>
+            Provides a link to an alternate version of the document (i.e. print
+            page, translated or mirror).<br />
+            Example: &lt;link rel="alternate" type="application/atom+xml"
+            title="W3Schools News" href="/blog/news/atom"&gt;
+          </td>
+        </tr>
+        <tr>
+          <td>author</td>
+          <td>Provides a link to the author of the document</td>
+        </tr>
+        <tr>
+          <td>dns-prefetch</td>
+          <td>
+            Specifies that the browser should preemptively perform DNS
+            resolution for the target resource's origin
+          </td>
+        </tr>
+        <tr>
+          <td>help</td>
+          <td>
+            Provides a link to a help document. Example: &lt;link rel="help"
+            href="/help/"&gt;
+          </td>
+        </tr>
+        <tr>
+          <td>icon</td>
+          <td>
+            Imports an icon to represent the document.<br />Example: &lt;link
+            rel="icon" href="favicon.ico" type="image/x-icon"&gt;
+          </td>
+        </tr>
+        <tr>
+          <td>license</td>
+          <td>Provides a link to copyright information for the document</td>
+        </tr>
+        <tr>
+          <td>next</td>
+          <td>Provides a link to the next document in the series</td>
+        </tr>
+        <tr>
+          <td>pingback</td>
+          <td>
+            Provides the address of the pingback server that handles pingbacks
+            to the current document
+          </td>
+        </tr>
+        <tr>
+          <td>preconnect</td>
+          <td>
+            Specifies that the browser should preemptively connect to the target
+            resource's origin.
+          </td>
+        </tr>
+        <tr>
+          <td>prefetch</td>
+          <td>
+            Specifies that the browser should preemptively fetch and cache the
+            target resource as it is likely to be required for a follow-up
+            navigation
+          </td>
+        </tr>
+        <tr>
+          <td>preload</td>
+          <td>
+            Specifies that the browser agent must preemptively fetch and cache
+            the target resource for current navigation according to the
+            destination given by the "as" attribute (and the priority associated
+            with that destination).
+          </td>
+        </tr>
+        <tr>
+          <td>prerender</td>
+          <td>
+            Specifies that the browser should pre-render (load) the specified
+            webpage in the background. So, if the user navigates to this page,
+            it speeds up the page load (because the page is already loaded).
+            <strong>Warning!</strong> This wastes the user's bandwidth! Only use
+            prerender if you are absolutely sure that the webpage is required at
+            some point in the user's journey
+          </td>
+        </tr>
+        <tr>
+          <td>prev</td>
+          <td>
+            Indicates that the document is a part of a series, and that the
+            previous document in the series is the referenced document
+          </td>
+        </tr>
+        <tr>
+          <td>search</td>
+          <td>
+            Provides a link to a resource that can be used to search through the
+            current document and its related pages.
+          </td>
+        </tr>
+        <tr>
+          <td>stylesheet</td>
+          <td>Imports a style sheet</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="keywords" content="HTML5,CSS,JavaScript" />
+    <meta name="author" content="John Doe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <h1>My Website</h1>
+    <p>Some text...</p>
+
+    <h2>Definition and usage</h2>
+    <pre>
+        The name attribute specifies the name for the metadata.
+        The name attribute specifies a name for the information/value of the content attribute.
+        Note: If the http-equiv attribute is set, the name attribute should not be set.
+        HTML5 introduced a method to let web designers take control over the viewport
+        (the user's visible area of a web page), through the &lt;meta&gt; tag (See "Setting The Viewport" example below).
+    </pre>
+
+    <h2>Values</h2>
+    <table class="ws-table-all notranslate" id="table1">
+      <tbody>
+        <tr>
+          <th style="width: 20%">Value</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>application-name</td>
+          <td>
+            Specifies the name of the Web application that the page represents
+          </td>
+        </tr>
+        <tr>
+          <td>author</td>
+          <td>
+            Specifies the name of the author of the document. Example:
+            <div class="w3-code w3-border notranslate htmlHigh">
+              <span class="tagnamecolor" style="color: brown"
+                ><span class="tagcolor" style="color: mediumblue">&lt;</span
+                >meta<span class="attributecolor" style="color: red">
+                  name<span
+                    class="attributevaluecolor"
+                    style="color: mediumblue"
+                    >="author"</span
+                  >
+                  content<span
+                    class="attributevaluecolor"
+                    style="color: mediumblue"
+                    >="John Doe"</span
+                  ></span
+                ><span class="tagcolor" style="color: mediumblue"
+                  >&gt;</span
+                ></span
+              >
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>description</td>
+          <td>
+            Specifies a description of the page. Search engines can pick up this
+            description to show with the results of searches. Example:
+            <div class="w3-code w3-border notranslate htmlHigh">
+              <span class="tagnamecolor" style="color: brown"
+                ><span class="tagcolor" style="color: mediumblue">&lt;</span
+                >meta<span class="attributecolor" style="color: red">
+                  name<span
+                    class="attributevaluecolor"
+                    style="color: mediumblue"
+                    >="description"</span
+                  >
+                  content<span
+                    class="attributevaluecolor"
+                    style="color: mediumblue"
+                    >="Free web tutorials"</span
+                  ></span
+                ><span class="tagcolor" style="color: mediumblue"
+                  >&gt;</span
+                ></span
+              >
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>generator</td>
+          <td>
+            Specifies one of the software packages used to generate the document
+            (not used on hand-authored pages). Example:
+            <div class="w3-code w3-border notranslate htmlHigh">
+              <span class="tagnamecolor" style="color: brown"
+                ><span class="tagcolor" style="color: mediumblue">&lt;</span
+                >meta<span class="attributecolor" style="color: red">
+                  name<span
+                    class="attributevaluecolor"
+                    style="color: mediumblue"
+                    >="generator"</span
+                  >
+                  content<span
+                    class="attributevaluecolor"
+                    style="color: mediumblue"
+                    >="FrontPage 4.0"</span
+                  ></span
+                ><span class="tagcolor" style="color: mediumblue"
+                  >&gt;</span
+                ></span
+              >
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>keywords</td>
+          <td>
+            Specifies a comma-separated list of keywords - relevant to the page
+            (Informs search engines what the page is about).<br /><br />
+            <b>Tip:</b> Always specify keywords (needed by search engines to
+            catalogize the page). Example:
+            <div class="w3-code w3-border notranslate htmlHigh">
+              <span class="tagnamecolor" style="color: brown"
+                ><span class="tagcolor" style="color: mediumblue">&lt;</span
+                >meta<span class="attributecolor" style="color: red">
+                  name<span
+                    class="attributevaluecolor"
+                    style="color: mediumblue"
+                    >="keywords"</span
+                  >
+                  content<span
+                    class="attributevaluecolor"
+                    style="color: mediumblue"
+                    >="HTML, meta tag, tag reference"</span
+                  ></span
+                ><span class="tagcolor" style="color: mediumblue"
+                  >&gt;</span
+                ></span
+              >
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>viewport</td>
+          <td>
+            Controls the viewport (the user's visible area of a web page).<br />
+
+            <p>
+              The viewport varies with the device, and will be smaller on a
+              mobile phone than on a computer screen.
+            </p>
+            <p>
+              You should include the following &lt;meta&gt; viewport element in
+              all your web pages:
+            </p>
+            <div class="w3-code w3-border notranslate htmlHigh">
+              <span class="tagnamecolor" style="color: brown"
+                ><span class="tagcolor" style="color: mediumblue">&lt;</span
+                >meta<span class="attributecolor" style="color: red">
+                  name<span
+                    class="attributevaluecolor"
+                    style="color: mediumblue"
+                    >="viewport"</span
+                  >
+                  content<span
+                    class="attributevaluecolor"
+                    style="color: mediumblue"
+                    >="width=device-width, initial-scale=1.0"</span
+                  ></span
+                ><span class="tagcolor" style="color: mediumblue"
+                  >&gt;</span
+                ></span
+              >
+            </div>
+            <p>
+              A &lt;meta&gt; viewport element gives the browser instructions on
+              how to control the page's dimensions and scaling.
+            </p>
+            <p>
+              The width=device-width part sets the width of the page to follow
+              the screen-width of the device (which will vary depending on the
+              device).
+            </p>
+            <p>
+              The initial-scale=1.0 part sets the initial zoom level when the
+              page is first loaded by the browser.
+            </p>
+            <p>
+              Here is an example of a web page <em>without</em> the viewport
+              meta tag, and the same web page <em>with</em> the viewport meta
+              tag:
+            </p>
+            <div class="w3-note w3-panel">
+              <p>
+                <strong>Tip:</strong> If you are browsing this page with a phone
+                or a tablet, you can click on the two links below to see the
+                difference.
+              </p>
+            </div>
+            <br />
+            <div class="w3-row" style="text-align: center">
+              <div class="w3-half">
+                <a target="_blank" href="/html/example_withoutviewport.htm"
+                  ><img
+                    src="/css/img_viewport1.png"
+                    class="w3-hover-shadow viewport"
+                  /><br /><br /><b>Without the viewport meta tag</b></a
+                >
+                <br />
+                <br />
+              </div>
+              <div class="w3-half">
+                <a target="_blank" href="/html/example_withviewport.htm"
+                  ><img
+                    src="/css/img_viewport2.png"
+                    class="w3-hover-shadow viewport"
+                  /><br /><br /><b>With the viewport meta tag</b></a
+                >
+                <br />
+                <br />
+              </div>
+            </div>
+            <div class="w3-note w3-panel">
+              <p>
+                You can read more about the viewport in our
+                <a href="/css/css_rwd_viewport.asp"
+                  >Responsive Web Design - The Viewport Tutorial</a
+                >.
+              </p>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

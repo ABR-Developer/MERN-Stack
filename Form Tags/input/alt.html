@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The input alt attribute</h1>
+
+    <p>
+      Click on the image, and the input will be sent to a page on the server
+      called "/action_page.php".
+    </p>
+
+    <form action="/action_page.php">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" />
+      <input
+        type="image"
+        src="submit.gif"
+        alt="Submit"
+        width="48"
+        height="48"
+      />
+    </form>
+
+    <p>
+      <b>Note:</b> The image input type sends the X and Y coordinates of the
+      click that activated the image button as default.
+    </p>
+
+    <h2>Definition and Usage</h2>
+    <p>
+      The alt attribute provides an alternate text for the user, if he/she for
+      some reason cannot view the image (because of slow connection, an error in
+      the src attribute, or if the user uses a screen reader). Note: The alt
+      attribute can only be used with &lt;input type="image"&gt;.
+    </p>
+  </body>
+</html>

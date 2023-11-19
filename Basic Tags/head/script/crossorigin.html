@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>crossorigin</title>
+  </head>
+  <body>
+    <h2>Definition and Usage</h2>
+    <pre>
+        The crossorigin attribute sets the mode of the request to an HTTP CORS Request.
+        Web pages often make requests to load resources on other servers. Here is where
+        CORS comes in.
+        A cross-origin request is a request for a resource (e.g. style sheets, iframes,
+        images, fonts, or scripts) from another domain.
+        CORS is used to manage cross-origin requests.
+        CORS stands for Cross-Origin Resource Sharing, and is a mechanism that allows 
+        resources on a web page to be requested from another domain outside their own 
+        domain. It defines a way of how a browser and server can interact to determine 
+        whether it is safe to allow the cross-origin request. CORS allows servers to 
+        specify who can access the assets on the server, among many other things.
+        Tip: The opposite of cross-origin requests is same-origin requests. This means 
+        that a web page can only interact with other documents that are also on the same 
+        server. This policy enforces that documents that interact with each other must 
+        have the same origin (domain).
+    </pre>
+
+    <h2>Syntax: &lt;script crossorigin="anonymous|use-credentials"&gt;</h2>
+
+    <h2>Values</h2>
+    <table class="ws-table-all notranslate">
+      <tbody>
+        <tr>
+          <th style="width: 20%">Value</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>anonymous<br />use-credentials</td>
+          <td>
+            Specifies the mode of the CORS request:
+            <ul>
+              <li>
+                anonymous - A cross-origin request is performed. No credentials
+                are sent
+              </li>
+              <li>
+                use-credentials - A cross-origin request is performed.
+                Credentials are sent (e.g. a cookie, a certificate, a HTTP Basic
+                authentication)
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Advantages:</h2>
+    <pre>
+        Enhanced Security:  
+            The primary advantage of using the crossorigin attribute is improved security.
+            It helps protect against security vulnerabilities related to cross-origin requests
+            by allowing the browser to control how it handles requests for external resources.
+        Credentials Control:
+            With the crossorigin attribute, you have control over whether or not to include 
+            credentials (such as cookies) with the cross-origin request. This is crucial when
+            accessing resources that require authentication or authorization.
+        Prevents Unauthorized Access:
+            By defaulting to "anonymous," the attribute prevents the automatic inclusion of 
+            credentials, reducing the risk of unauthorized access to sensitive resources.
+        Support for CORS (Cross-Origin Resource Sharing):
+            The crossorigin attribute is part of the CORS mechanism, which defines how browsers
+            and servers communicate to determine whether or not a web application running at one
+            origin can request resources from another origin.
+    </pre>
+
+    <h2>Disadvantages:</h2>
+    <pre>
+        Complexity in Configuration:
+            Managing and configuring the crossorigin attribute, especially in conjunction with 
+            other security features like the integrity attribute, can add complexity to the 
+            development process. It requires careful consideration of the security requirements 
+            for each external resource.
+        Potential for CORS Issues:
+            While CORS is a powerful security feature, it can lead to issues, especially during 
+            development when resources may be loaded from different origins. Developers may need
+            to configure servers to include the appropriate CORS headers to allow or deny 
+            cross-origin requests.
+        Browser Compatibility:
+            While modern browsers support the crossorigin attribute, older browsers may not fully
+            implement or support it. Developers need to be mindful of browser compatibility when 
+            using this attribute.
+        Overhead in Development:
+            Implementing and testing the crossorigin attribute adds some overhead in the development
+            process. Developers need to be aware of the security implications and ensure that the 
+            attribute is configured correctly for each external resource.
+    </pre>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

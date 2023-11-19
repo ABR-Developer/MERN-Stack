@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>integrity attribute script tag</title>
+    <script src="myscripts.js" referrerpolicy="origin"></script>
+  </head>
+  <body>
+    <h2>Definition and Usage</h2>
+    <pre>
+        The referrerpolicy attribute specifies which referrer information to send when fetching a script.
+    </pre>
+
+    <h2>
+      Syntax: &lt;script
+      referrerpolicy="no-referrer|no-referrer-when-downgrade|origin|
+      origin-when-cross-origin|same-origin|strict-origin-when-cross-origin|unsafe-url"&gt;
+    </h2>
+
+    <h2>Values</h2>
+    <table class="ws-table-all notranslate">
+      <tbody>
+        <tr>
+          <th style="width: 30%">Value</th>
+          <th>Description</th>
+          <th>More...</th>
+        </tr>
+        <tr>
+          <td>no-referrer</td>
+          <td>No referrer information is sent</td>
+          <td>
+            The browser omits the Referer header entirely when making requests
+            for the resource. This means that the server receiving the request
+            won't know the URL of the page that initiated the request.
+          </td>
+        </tr>
+        <tr>
+          <td>no-referrer-when-downgrade</td>
+          <td>
+            Default. Sends the origin, path, and query string if the protocol
+            security level stays the same or is higher (HTTP to HTTP, HTTPS to
+            HTTPS, HTTP to HTTPS is ok). Sends nothing to less secure level
+            (HTTPS to HTTP is not ok)
+          </td>
+          <td>
+            The Referer header is sent to the target resource if and only if the
+            request is secure (HTTPS to HTTP). Otherwise, it behaves like
+            no-referrer.
+          </td>
+        </tr>
+        <tr>
+          <td>origin</td>
+          <td>Sends the origin (scheme, host, and port) of the document</td>
+          <td>
+            Only sends the origin (scheme, host, and port) of the referring page
+            in the Referer header. For example, if the referring page is
+            https://example.com/page, only https://example.com will be sent.
+          </td>
+        </tr>
+        <tr>
+          <td>origin-when-cross-origin</td>
+          <td>
+            Sends the origin of the document for cross-origin request. Sends the
+            origin, path, and query string for same-origin request
+          </td>
+          <td>
+            Sends the full URL for same-origin requests and only the origin for
+            cross-origin requests.
+          </td>
+        </tr>
+        <tr>
+          <td>same-origin</td>
+          <td>
+            Sends a referrer for same-origin request. Sends no referrer for
+            cross-origin request
+          </td>
+          <td>
+            Sends the full URL in the Referer header for same-origin requests,
+            but it omits the Referer header for cross-origin requests. This is
+            useful for maintaining privacy when navigating within the same
+            origin.
+          </td>
+        </tr>
+        <tr>
+          <td>strict-origin-when-cross-origin</td>
+          <td>
+            Sends the origin if the protocol security level stays the same or is
+            higher (HTTP to HTTP, HTTPS to HTTPS, and HTTP to HTTPS is ok).
+            Sends nothing to less secure level (HTTPS to HTTP)
+          </td>
+          <td>
+            Sends the full URL in the Referer header for same-origin requests,
+            and for cross-origin requests, it sends only the origin (scheme,
+            host, and port) of the referring page.
+          </td>
+        </tr>
+        <tr>
+          <td>unsafe-url</td>
+          <td>
+            Sends the origin, path, and query string (regardless of security).
+            Use this value carefully!
+          </td>
+          <td>
+            Sends the full URL in the Referer header, regardless of whether the
+            request is cross-origin.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <ul>
+      <li>
+        <td>no-referrer:</td>
+        <td>
+          <li>
+            Advantages: Privacy Protection: This policy provides a high level of
+            privacy by not sending any Referer information, minimizing the risk
+            of disclosing sensitive data.
+          </li>
+          <li>
+            Disadvantages: Limited Referer Information: While it enhances
+            privacy, the absence of Referer information can be a disadvantage in
+            scenarios where analytics or logging rely on this information for
+            tracking user navigation.
+          </li>
+        </td>
+      </li>
+      <li>
+        <td>no-referrer-when-downgrade:</td>
+        <td>
+          <li>
+            Advantages: Referrer for Secure Requests: Provides some level of
+            privacy for insecure requests while still sending the full Referer
+            information for secure (HTTPS) requests.
+          </li>
+          <li>
+            Disadvantages: Potential for Information Disclosure: The Referer
+            information is still sent for secure requests, which might be a
+            concern in certain security-sensitive scenarios.
+          </li>
+        </td>
+      </li>
+      <li>
+        <td>same-origin:</td>
+        <td>
+          <li>
+            Advantages: Privacy within the Same Origin: Maintains privacy by
+            sending the full Referer information for same-origin requests while
+            omitting it for cross-origin requests.
+          </li>
+          <li>
+            Disadvantages: Limited Cross-Origin Information: Cross-origin
+            requests won't include Referer information, which may impact
+            analytics and tracking on third-party resources.
+          </li>
+        </td>
+      </li>
+      <li>
+        <td>origin:</td>
+        <td>
+          <li>
+            Advantages: Limited Referer Information: Sends only the origin
+            (scheme, host, and port) of the referring page, providing a balance
+            between privacy and information disclosure.
+          </li>
+          <li>
+            Disadvantages: Reduced Analytical Data: Similar to no-referrer, the
+            limited information may impact analytics or tracking that relies on
+            detailed Referer information.
+          </li>
+        </td>
+      </li>
+      <li>
+        <td>strict-origin-when-cross-origin:</td>
+        <td>
+          <li>
+            Advantages: Balanced Information Disclosure: Sends the full Referer
+            information for same-origin requests and only the origin for
+            cross-origin requests, providing a balance between privacy and
+            analytics.
+          </li>
+          <li>
+            Disadvantages: Potential for Cross-Origin Information Disclosure:
+            While limited, cross-origin requests still include some Referer
+            information, which might be a concern in certain scenarios.
+          </li>
+        </td>
+      </li>
+      <li>
+        <td>origin-when-cross-origin:</td>
+        <td>
+          <li>
+            Advantages: Balanced Information Disclosure: Similar to
+            strict-origin-when-cross-origin, it sends the full Referer
+            information for same-origin requests and only the origin for
+            cross-origin requests.
+          </li>
+          <li>
+            Disadvantages: Potential for Cross-Origin Information Disclosure:
+            Similar to strict-origin-when-cross-origin, cross-origin requests
+            still include some Referer information.
+          </li>
+        </td>
+      </li>
+      <li>
+        <td>unsafe-url:</td>
+        <td>
+          <li>
+            Advantages: Full Referer Information: Sends the full Referer
+            information for both same-origin and cross-origin requests.
+          </li>
+          <li>
+            Disadvantages: Privacy Concerns: Provides the least privacy among
+            the options, potentially exposing sensitive information in the
+            Referer header.
+          </li>
+        </td>
+      </li>
+    </ul>
+  </body>
+</html>

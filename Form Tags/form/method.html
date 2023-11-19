@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The form method="get" attribute</h1>
+
+    <form action="/action_page.php" method="get" target="_blank">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <p>
+      Click on the submit button, and the input will be sent to a page on the
+      server called "action_page.php".
+    </p>
+
+    <h2>Definition and Usage</h2>
+    <p>
+      The method attribute specifies how to send form-data (the form-data is
+      sent to the page specified in the action attribute). The form-data can be
+      sent as URL variables (with method="get") or as HTTP post transaction
+      (with method="post").
+    </p>
+
+    <h3>Notes on GET:</h3>
+    <p>
+      Appends form-data into the URL in name/value pairs The length of a URL is
+      limited (about 3000 characters) Never use GET to send sensitive data!
+      (will be visible in the URL) Useful for form submissions where a user
+      wants to bookmark the result GET is better for non-secure data, like query
+      strings in Google
+    </p>
+
+    <h3>Notes on POST:</h3>
+    <p>
+      Appends form-data inside the body of the HTTP request (data is not shown
+      in URL) Has no size limitations Form submissions with POST cannot be
+      bookmarked
+    </p>
+  </body>
+</html>

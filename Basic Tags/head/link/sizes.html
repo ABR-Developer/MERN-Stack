@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="demo_icon.gif" type="image/gif" sizes="16x16" />
+  </head>
+  <body>
+    <h2>Hello world!</h2>
+    <p>
+      Open this page in a
+      <a href="tryhtml5_link_sizes.htm" target="_blank">new window</a> to see
+      the favicon.
+    </p>
+    <p>
+      <b>Note:</b> The sizes attribute is not currently supported in any of the
+      major browsers.
+    </p>
+
+    <h2>Definition and Usage</h2>
+    <pre>
+    The sizes attribute specifies the sizes of icons for visual media.
+    This attribute is only used if rel="icon".
+</pre
+    >
+
+    <h2>Syntax: &lt;link sizes="HeightxWidth|any"&gt;</h2>
+
+    <h2>Values</h2>
+    <table class="ws-table-all notranslate">
+      <tbody>
+        <tr>
+          <th style="width: 20%">Value</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td><i>Height</i>x<i>Width</i></td>
+          <td>
+            Specifies one or more sizes for the linked icon.<br />The height and
+            width values are separated by an "x" or "X".
+            <p>Examples:</p>
+            <ul>
+              <li>
+                &lt;link rel="icon" href="favicon.png" sizes="16x16"
+                type="image/png"&gt; (1 size)
+              </li>
+              <li>
+                &lt;link rel="icon" href="favicon.png" sizes="16x16 32x32"
+                type="image/png"&gt; (2 sizes)
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>any</td>
+          <td>
+            Specifies that the icon is scalable (like an SVG image)
+            <p>Examples:</p>
+            <ul>
+              <li>
+                &lt;link rel="icon" href="icon.svg" sizes="any"
+                type="image/svg+xml"&gt; (any size)
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

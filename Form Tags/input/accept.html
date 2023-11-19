@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The input accept attribute</h1>
+
+    <form action="/action_page.php">
+      <label for="img">Select image:</label>
+      <input type="file" id="img" name="img" accept="image/*" />
+      <input type="submit" />
+    </form>
+
+    <p>
+      <strong>Note:</strong> Because of security issues, this example will not
+      allow you to upload files.
+    </p>
+
+    <h2>Definition and Usage</h2>
+    <p>
+      The accept attribute specifies a filter for what file types the user can
+      pick from the file input dialog box. Note: The accept attribute can only
+      be used with &lt;input type="file"&gt;. Tip: Do not use this attribute as
+      a validation tool. File uploads should be validated on the server.
+    </p>
+
+    <h2>
+      Syntax: &lt;input
+      accept="file_extension|audio/*|video/*|image/*|media_type"&gt;
+    </h2>
+    <p>
+      Tip: To specify more than one value, separate the values with a comma
+      (e.g. &lt;input accept="audio/*,video/*,image/*" /&gt;.
+    </p>
+
+    <h2>Values</h2>
+    <table class="ws-table-all notranslate">
+      <tbody>
+        <tr>
+          <th style="width: 20%">Value</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td><em>file_extension</em></td>
+          <td>
+            Specify the file extension(s) (e.g: .gif, .jpg, .png, .doc) the user
+            can pick from
+          </td>
+        </tr>
+        <tr>
+          <td>audio/*</td>
+          <td>The user can pick all sound files</td>
+        </tr>
+        <tr>
+          <td>video/*</td>
+          <td>The user can pick all video files</td>
+        </tr>
+        <tr>
+          <td>image/*</td>
+          <td>The user can pick all image files</td>
+        </tr>
+        <tr>
+          <td><i>media_type</i></td>
+          <td>
+            A valid media type, with no parameters. Look at
+            <a
+              href="http://www.iana.org/assignments/media-types/"
+              target="_blank"
+              >IANA Media Types</a
+            >
+            for a complete list of standard media types
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

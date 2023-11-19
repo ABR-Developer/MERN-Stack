@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The formenctype attribute</h1>
+
+    <form action="/action_page_binary.asp" method="post">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <input type="submit" value="Submit" />
+      <input
+        type="submit"
+        formenctype="multipart/form-data"
+        value="Submit as Multipart/form-data"
+      />
+    </form>
+
+    <h2>Definition and Usage</h2>
+    <p>
+      The formenctype attribute specifies how the form-data should be encoded
+      when submitting it to the server (only for forms with method="post") The
+      formenctype attribute overrides the enctype attribute of the &lt;form&gt;
+      element. Note: The formenctype attribute is used with type="submit" and
+      type="image".
+    </p>
+  </body>
+</html>

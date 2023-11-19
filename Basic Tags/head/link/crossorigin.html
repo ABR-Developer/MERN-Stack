@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    The crossorigin attribute is used in HTML &lt;link&gt; tags, specifically
+    when loading external resources such as stylesheets. It is employed as a
+    security feature to control how the browser handles requests for
+    cross-origin resources. When you include an external stylesheet in your HTML
+    document using the &lt;link&gt; tag, the browser might make a cross-origin
+    request to fetch that resource. Cross-origin requests are requests for
+    resources that are located on a different domain, protocol, or port than the
+    one that served the web page. The crossorigin attribute can take two values:
+    1) anonymous: This is the default value. It means that the browser will make
+    the request without sending any credentials (like cookies or HTTP
+    authentication) along with the request. &lt;link rel="stylesheet"
+    href="styles.css" crossorigin="anonymous"&gt; 2) use-credentials: This value
+    indicates that the browser should include credentials (such as cookies) with
+    the request for the cross-origin resource. &lt;link rel="stylesheet"
+    href="styles.css" crossorigin="use-credentials"&gt; It's worth noting that
+    the crossorigin attribute is not limited to stylesheets; it can also be used
+    with other external resources like scripts and fonts that may be loaded from
+    a different origin. The use of this attribute helps mitigate potential
+    security risks associated with cross-origin requests.
+  </body>
+</html>
