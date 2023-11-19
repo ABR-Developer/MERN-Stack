@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The input popovertargetaction Attribute</h1>
+
+    <h1 popover id="myheader">Hello</h1>
+
+    <input
+      type="button"
+      popovertarget="myheader"
+      popovertargetaction="show"
+      value="Show popover"
+    />
+
+    <p>Click the button and it will show the popover element.</p>
+
+    <h2>Definition and Usage</h2>
+    <p>
+      The popovertargetaction attribute allows you to define what happens when
+      you click the button. You can choose between the values "show", "hide",
+      and "toggle". The popovertargetaction only works when type="button". If
+      the popovertargetaction attribute is not specified, the default "toggle"
+      value will be used.
+    </p>
+
+    <h2>
+        Syntax: &lt;input type="button" popovertarget="element_id popovertargetaction="hide|show|toggle""&gt;
+    </h2>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The input readonly attribute</h1>
+
+    <form action="/action_page.php">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <label for="country">Country:</label>
+      <input
+        type="text"
+        id="country"
+        name="country"
+        value="Norway"
+        readonly
+      /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <h2>Definition and Usage</h2>
+    <p>
+      The readonly attribute is a boolean attribute. When present, it specifies
+      that an input field is read-only. A read-only input field cannot be
+      modified (however, a user can tab to it, highlight it, and copy the text
+      from it). The readonly attribute can be set to keep a user from changing
+      the value until some other conditions have been met (like selecting a
+      checkbox, etc.). Then, a JavaScript can remove the readonly value, and
+      make the input field editable. Note: A form will still submit an input
+      field that is readonly, but will not submit an input field that is
+      disabled!
+    </p>
+  </body>
+</html>

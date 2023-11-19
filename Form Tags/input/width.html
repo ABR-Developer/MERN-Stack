@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The input height and width attributes</h1>
+
+    <form action="/action_page.php">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname" /><br /><br />
+      <input
+        type="image"
+        src="img_submit.gif"
+        alt="Submit"
+        width="48"
+        height="48"
+      />
+    </form>
+
+    <p>
+      <b>Note:</b> The input type="image" sends the X and Y coordinates of the
+      click that activated the image button.
+    </p>
+
+    <h2>Definition and Usage</h2>
+    <p>
+      The width attribute specifies the width of the &lt;input&gt; element.
+      Note: The width attribute is used only with &lt;input type="image"&gt;.
+      Tip: Always specify both the height and width attributes for images. If
+      height and width are set, the space required for the image is reserved
+      when the page is loaded. However, without these attributes, the browser
+      does not know the size of the image, and cannot reserve the appropriate
+      space to it. The effect will be that the page layout will change during
+      loading (while the images load).
+    </p>
+  </body>
+</html>
